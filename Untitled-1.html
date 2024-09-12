@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Consulta</title>
+    <style> 
+        body{
+            font-family: Arial,sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #4A47A3;
+        }
+        .buttons {
+            margin-top: 20px;
+
+        }
+        .btn {
+            padding: 10px 20 px ;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;      
+         }
+          .confirm {
+            background-color: #4CAF50;
+            color: white;
+          }
+    </style>
+</head>
+<body>
+   <div class="container"> 
+    <h1>Agendamento</h1>
+    <p><stron>Clinica:</stron>Clinica exemplo </p>
+    <p><strong>Profissional:</strong> 
+    Dr.Lucas Lima do Nascimento </p>
+    <p><strong>Data:</strong>
+        Sexta-feira ,13/09 ás 13:00 </p>
+        <p><strong>Local:</strong>Rua exemplo ,numero exemplo,Aracaju,SE </p>
+
+        <div class="buttons">
+        <button class="btn confirm"
+        onclick="confirmAppointment()">Confirmar</button>
+        <button class="btn cancel"
+        onclick="cancelAppointment()">Cancelar</button>
+        </div>
+   </div>
+   <script>
+    function confirmAppointment () {
+        alert("Consulta confirmada!"); 
+        /*aqui teria que fazer uma requisiçao ao servidor para confirmar a consulta */
+    }
+    function cancelAppointment () {
+        alert("Consulta cancelada!"); 
+    }
+   </script>    
+</body>
+</html>
